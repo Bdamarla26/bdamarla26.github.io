@@ -2,87 +2,81 @@
 <html lang="en">
 <head>
   <!-- =========================
-       BASIC META
+       META / SEO
   ========================== -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bhuvan Sri Sai Damarla — Portfolio</title>
   <meta name="description" content="Bhuvan Sri Sai Damarla portfolio — Data Analyst / Data Scientist / Python Developer" />
-
-  <!-- =========================
-       MAIN CSS
-  ========================== -->
   <link rel="stylesheet" href="style.css" />
 
   <!-- =========================
        ICONS (Font Awesome)
-       Needed for GitHub/LinkedIn/Email logos
+       (Used for GitHub / LinkedIn / Email logos)
   ========================== -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 
 <body>
-  <!-- =========================================================
-       TOP SCROLL PROGRESS BAR
-       (Shows scroll progress at top)
-  ========================================================== -->
+  <!-- =========================
+       TOP PROGRESS BAR
+  ========================== -->
   <div class="scrollbar" id="scrollbar"></div>
 
-  <!-- =========================================================
-       NAVIGATION BAR
-       Desktop nav links + Mobile menu button
-  ========================================================== -->
+  <!-- =========================
+       NAVBAR
+  ========================== -->
   <header class="nav">
     <div class="nav-inner">
-      <!-- ===== Brand / Logo ===== -->
+      <!-- Brand -->
       <a class="brand" href="#home" aria-label="Go to Home">
         <span class="brand-dot"></span>
-        <span class="brand-name">Bhuvan Sri Sai Damarla</span>
+        <span class="brand-name">BHUWAN SRI SAI DAMARLA</span>
       </a>
 
-      <!-- ===== Desktop Navigation Links ===== -->
+      <!-- Desktop nav links -->
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#home">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
+        <a href="#home">HOME</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#experience">EXPERIENCE</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#education">EDUCATION</a>
+        <a href="#certifications">CERTIFICATIONS</a>
+        <a href="#publications">PUBLICATIONS</a>
+        <a href="#contact">CONTACT</a>
       </nav>
 
-      <!-- ===== Mobile Menu Button (Hamburger) ===== -->
+      <!-- Mobile menu button -->
       <button class="nav-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
     </div>
 
-    <!-- ===== Mobile Navigation Menu (shows on small screens) ===== -->
+    <!-- =========================
+         MOBILE MENU
+    ========================== -->
     <div class="nav-mobile" id="mobileMenu" aria-label="Mobile navigation">
-      <a href="#home">Home</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#publications">Publications</a>
-      <a href="#contact">Contact</a>
+      <a href="#home">HOME</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#experience">EXPERIENCE</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#education">EDUCATION</a>
+      <a href="#certifications">CERTIFICATIONS</a>
+      <a href="#publications">PUBLICATIONS</a>
+      <a href="#contact">CONTACT</a>
     </div>
   </header>
 
-  <!-- =========================================================
-       MAIN CONTENT WRAPPER
-       (All sections inside container)
-  ========================================================== -->
+  <!-- =========================
+       MAIN CONTAINER
+  ========================== -->
   <main class="container" id="home">
 
-    <!-- =========================================================
+    <!-- =========================
          HERO SECTION
-         (Intro + CTA buttons + Social icons + Quick Info card)
-    ========================================================== -->
+    ========================== -->
     <section class="hero reveal">
-      <!-- ===== Left Side: Intro content ===== -->
+      <!-- Left content -->
       <div class="hero-left">
         <p class="kicker">Portfolio</p>
 
@@ -101,87 +95,100 @@
           <b>35%</b> and improved workflow efficiency by <b>70%</b> through Python automation and ML integration.
         </p>
 
-        <!-- ===== Call-to-action buttons ===== -->
+        <!-- Buttons -->
         <div class="cta">
           <a class="btn primary" href="#contact">Contact</a>
           <a class="btn" href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
           <a class="btn ghost" href="#projects">View Projects</a>
         </div>
 
-        <!-- ===== Social Icons (GitHub / LinkedIn / Email) ===== -->
+        <!-- =========================
+             SOCIAL ICONS (BIG + CLEAN)
+        ========================== -->
         <div class="social-icons" aria-label="Social links">
-          <a class="icon-btn" href="https://github.com/Bdamarla26" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <a class="icon-btn" href="https://github.com/Bdamarla26" target="_blank" rel="noreferrer" aria-label="Open GitHub">
             <i class="fa-brands fa-github"></i>
           </a>
 
-          <a class="icon-btn" href="https://www.linkedin.com/in/bdamarla" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <a class="icon-btn" href="https://www.linkedin.com/in/bdamarla" target="_blank" rel="noreferrer" aria-label="Open LinkedIn">
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
 
           <button class="icon-btn email" id="copyEmailBtn" type="button" data-copy="bdamarla.26@gmail.com" aria-label="Copy Email">
             <i class="fa-solid fa-envelope"></i>
           </button>
+
+          <span class="social-hint muted" id="emailHint">Click ✉ to copy email</span>
         </div>
       </div>
 
-      <!-- ===== Right Side: Quick Info Card ===== -->
+      <!-- =========================
+           QUICK INFO CARD (REDESIGNED)
+      ========================== -->
       <aside class="hero-card card floaty">
-  <div class="card-glow"></div>
+        <div class="card-glow"></div>
 
-  <h2 class="qi-title">Quick Info</h2>
+        <div class="qhead">
+          <h2>Quick Info</h2>
+          <span class="qbadge">Open to Work</span>
+        </div>
 
-  <div class="qi-list">
-    <div class="qi-item">
-      <span class="qi-icon">✉️</span>
-      <div>
-        <div class="qi-label">Email</div>
-        <a class="qi-value" href="mailto:bdamarla.26@gmail.com">bdamarla.26@gmail.com</a>
-      </div>
-    </div>
+        <div class="qgrid">
+          <div class="qitem">
+            <div class="qicon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="qtext">
+              <div class="qlabel">Email</div>
+              <a class="qvalue" href="mailto:bdamarla.26@gmail.com">bdamarla.26@gmail.com</a>
+            </div>
+          </div>
 
-    <div class="qi-item">
-      <span class="qi-icon">📞</span>
-      <div>
-        <div class="qi-label">Phone</div>
-        <a class="qi-value" href="tel:+15712621333">+1 (571) 262-1333</a>
-      </div>
-    </div>
+          <div class="qitem">
+            <div class="qicon"><i class="fa-solid fa-phone"></i></div>
+            <div class="qtext">
+              <div class="qlabel">Phone</div>
+              <a class="qvalue" href="tel:+15712621333">+1 (571) 262-1333</a>
+            </div>
+          </div>
 
-    <div class="qi-item">
-      <span class="qi-icon">📍</span>
-      <div>
-        <div class="qi-label">Location</div>
-        <div class="qi-value">Fairfax, VA (USA)</div>
-      </div>
-    </div>
+          <div class="qitem">
+            <div class="qicon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="qtext">
+              <div class="qlabel">Location</div>
+              <div class="qvalue">Fairfax, VA (USA)</div>
+            </div>
+          </div>
 
-    <div class="qi-item">
-      <span class="qi-icon">💼</span>
-      <div>
-        <div class="qi-label">Looking For</div>
-        <div class="qi-value">Internship • Part-time • Full-time</div>
-      </div>
-    </div>
+          <div class="qitem">
+            <div class="qicon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="qtext">
+              <div class="qlabel">Looking For</div>
+              <div class="qvalue">Internship • Part-time • Full-time</div>
+            </div>
+          </div>
 
-    <div class="qi-item">
-      <span class="qi-icon">🎯</span>
-      <div>
-        <div class="qi-label">Focus</div>
-        <div class="qi-value">Data • ML • Automation • Dashboards</div>
-      </div>
-    </div>
-  </div>
+          <div class="qitem">
+            <div class="qicon"><i class="fa-solid fa-bullseye"></i></div>
+            <div class="qtext">
+              <div class="qlabel">Focus</div>
+              <div class="qvalue">Data • ML • Automation • Dashboards</div>
+            </div>
+          </div>
+        </div>
 
-  <div class="qi-tip">
-    💡 Tip: Highlight your best 3–4 projects with metrics (accuracy, RMSE, time saved).
-  </div>
-</aside>
+        <div class="divider"></div>
+
+        <div class="qtip">
+          <div class="qtip-title">Tip</div>
+          <p class="mini">
+            Keep your best 3–4 projects here, add metrics (accuracy, RMSE, time saved, etc.), and links.
+          </p>
+        </div>
+      </aside>
     </section>
 
-    <!-- =========================================================
+    <!-- =========================
          STATS SECTION
-         (Highlights / quick metrics)
-    ========================================================== -->
+    ========================== -->
     <section class="stats reveal">
       <div class="stat card">
         <div class="stat-num">70%</div>
@@ -197,10 +204,9 @@
       </div>
     </section>
 
-    <!-- =========================================================
+    <!-- =========================
          SKILLS SECTION
-         (ATS-friendly keyword blocks)
-    ========================================================== -->
+    ========================== -->
     <section class="section card reveal" id="skills">
       <div class="section-head">
         <h2>Skills</h2>
@@ -261,10 +267,9 @@
       </div>
     </section>
 
-    <!-- =========================================================
+    <!-- =========================
          EXPERIENCE SECTION
-         (Timeline + impact bullets)
-    ========================================================== -->
+    ========================== -->
     <section class="section card reveal" id="experience">
       <div class="section-head">
         <h2>Experience</h2>
@@ -329,10 +334,9 @@
       </div>
     </section>
 
-    <!-- =========================================================
+    <!-- =========================
          PROJECTS SECTION
-         (Project cards with links)
-    ========================================================== -->
+    ========================== -->
     <section class="section card reveal" id="projects">
       <div class="section-head">
         <h2>Projects</h2>
@@ -390,9 +394,9 @@
       </div>
     </section>
 
-    <!-- =========================================================
+    <!-- =========================
          EDUCATION SECTION
-    ========================================================== -->
+    ========================== -->
     <section class="section card reveal" id="education">
       <div class="section-head">
         <h2>Education</h2>
@@ -418,9 +422,9 @@
       </div>
     </section>
 
-    <!-- =========================================================
+    <!-- =========================
          CERTIFICATIONS SECTION
-    ========================================================== -->
+    ========================== -->
     <section class="section card reveal" id="certifications">
       <div class="section-head">
         <h2>Certifications</h2>
@@ -436,9 +440,9 @@
       </div>
     </section>
 
-    <!-- =========================================================
+    <!-- =========================
          PUBLICATIONS SECTION
-    ========================================================== -->
+    ========================== -->
     <section class="section card reveal" id="publications">
       <div class="section-head">
         <h2>Publications</h2>
@@ -466,9 +470,9 @@
       </div>
     </section>
 
-    <!-- =========================================================
+    <!-- =========================
          CONTACT SECTION
-    ========================================================== -->
+    ========================== -->
     <section class="section card reveal" id="contact">
       <div class="section-head">
         <h2>Contact</h2>
@@ -500,22 +504,22 @@
       </div>
     </section>
 
-    <!-- =========================================================
+    <!-- =========================
          FOOTER
-    ========================================================== -->
+    ========================== -->
     <footer class="footer reveal">
       © <span id="year"></span> Bhuvan Sri Sai Damarla • Built with HTML/CSS
     </footer>
   </main>
 
-  <!-- =========================================================
+  <!-- =========================
+       TOAST (Copy Email)
+  ========================== -->
+  <div class="toast" id="toast">Email copied!</div>
+
+  <!-- =========================
        JAVASCRIPT
-       - year
-       - mobile menu
-       - copy email
-       - scroll progress
-       - reveal animation
-  ========================================================== -->
+  ========================== -->
   <script>
     // year
     document.getElementById("year").textContent = new Date().getFullYear();
@@ -538,16 +542,23 @@
       });
     });
 
-    // copy email (icon button)
+    // toast
+    const toast = document.getElementById("toast");
+    const showToast = (msg) => {
+      toast.textContent = msg;
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 1200);
+    };
+
+    // copy email
     const copyBtn = document.getElementById("copyEmailBtn");
     copyBtn.addEventListener("click", async () => {
+      const email = copyBtn.dataset.copy;
       try {
-        await navigator.clipboard.writeText(copyBtn.dataset.copy);
-        const oldHTML = copyBtn.innerHTML;
-        copyBtn.innerHTML = '<i class="fa-solid fa-check"></i>';
-        setTimeout(() => (copyBtn.innerHTML = oldHTML), 900);
+        await navigator.clipboard.writeText(email);
+        showToast("Email copied!");
       } catch (e) {
-        window.location.href = "mailto:" + copyBtn.dataset.copy;
+        window.location.href = "mailto:" + email;
       }
     });
 
@@ -576,4 +587,3 @@
   </script>
 </body>
 </html>
-
