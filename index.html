@@ -1,46 +1,29 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- =========================
-       BASIC META
-  ========================== -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bhuvan Sri Sai Damarla — Portfolio</title>
   <meta name="description" content="Bhuvan Sri Sai Damarla portfolio — Data Analyst / Data Scientist / Python Developer" />
 
-  <!-- =========================
-       MAIN CSS
-  ========================== -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- =========================
-       ICONS (Font Awesome)
-       Needed for GitHub/LinkedIn/Email logos
-  ========================== -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+  <!-- ✅ Icons (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
-  <!-- =========================================================
-       TOP SCROLL PROGRESS BAR
-       (Shows scroll progress at top)
-  ========================================================== -->
+  <!-- Top Progress Bar -->
   <div class="scrollbar" id="scrollbar"></div>
 
-  <!-- =========================================================
-       NAVIGATION BAR
-       Desktop nav links + Mobile menu button
-  ========================================================== -->
+  <!-- NAV -->
   <header class="nav">
     <div class="nav-inner">
-      <!-- ===== Brand / Logo ===== -->
       <a class="brand" href="#home" aria-label="Go to Home">
         <span class="brand-dot"></span>
         <span class="brand-name">Bhuvan Sri Sai Damarla</span>
       </a>
 
-      <!-- ===== Desktop Navigation Links ===== -->
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#home">Home</a>
         <a href="#skills">Skills</a>
@@ -52,13 +35,12 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <!-- ===== Mobile Menu Button (Hamburger) ===== -->
       <button class="nav-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
     </div>
 
-    <!-- ===== Mobile Navigation Menu (shows on small screens) ===== -->
+    <!-- Mobile menu -->
     <div class="nav-mobile" id="mobileMenu" aria-label="Mobile navigation">
       <a href="#home">Home</a>
       <a href="#skills">Skills</a>
@@ -71,25 +53,14 @@
     </div>
   </header>
 
-  <!-- =========================================================
-       MAIN CONTENT WRAPPER
-       (All sections inside container)
-  ========================================================== -->
   <main class="container" id="home">
-
-    <!-- =========================================================
-         HERO SECTION
-         (Intro + CTA buttons + Social icons + Quick Info card)
-    ========================================================== -->
+    <!-- HERO -->
     <section class="hero reveal">
-      <!-- ===== Left Side: Intro content ===== -->
       <div class="hero-left">
         <p class="kicker">Portfolio</p>
-
         <h1>
           Hi, I’m <span class="accent">Bhuvan Sri Sai Damarla</span>.
         </h1>
-
         <p class="subtitle">
           Master’s (Data Analytics Engineering) • Data Analyst • Data Scientist • Python Developer
         </p>
@@ -101,15 +72,14 @@
           <b>35%</b> and improved workflow efficiency by <b>70%</b> through Python automation and ML integration.
         </p>
 
-        <!-- ===== Call-to-action buttons ===== -->
         <div class="cta">
           <a class="btn primary" href="#contact">Contact</a>
           <a class="btn" href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
           <a class="btn ghost" href="#projects">View Projects</a>
         </div>
 
-        <!-- ===== Social Icons (GitHub / LinkedIn / Email) ===== -->
-        <div class="social-icons" aria-label="Social links">
+        <!-- ✅ SOCIAL ICONS (replaces your old .social text buttons) -->
+        <div class="social-icons">
           <a class="icon-btn" href="https://github.com/Bdamarla26" target="_blank" rel="noreferrer" aria-label="GitHub">
             <i class="fa-brands fa-github"></i>
           </a>
@@ -124,7 +94,6 @@
         </div>
       </div>
 
-      <!-- ===== Right Side: Quick Info Card ===== -->
       <aside class="hero-card card floaty">
         <div class="card-glow"></div>
         <h2>Quick Info</h2>
@@ -161,10 +130,7 @@
       </aside>
     </section>
 
-    <!-- =========================================================
-         STATS SECTION
-         (Highlights / quick metrics)
-    ========================================================== -->
+    <!-- STATS -->
     <section class="stats reveal">
       <div class="stat card">
         <div class="stat-num">70%</div>
@@ -180,10 +146,7 @@
       </div>
     </section>
 
-    <!-- =========================================================
-         SKILLS SECTION
-         (ATS-friendly keyword blocks)
-    ========================================================== -->
+    <!-- SKILLS -->
     <section class="section card reveal" id="skills">
       <div class="section-head">
         <h2>Skills</h2>
@@ -244,10 +207,7 @@
       </div>
     </section>
 
-    <!-- =========================================================
-         EXPERIENCE SECTION
-         (Timeline + impact bullets)
-    ========================================================== -->
+    <!-- EXPERIENCE -->
     <section class="section card reveal" id="experience">
       <div class="section-head">
         <h2>Experience</h2>
@@ -312,10 +272,7 @@
       </div>
     </section>
 
-    <!-- =========================================================
-         PROJECTS SECTION
-         (Project cards with links)
-    ========================================================== -->
+    <!-- PROJECTS -->
     <section class="section card reveal" id="projects">
       <div class="section-head">
         <h2>Projects</h2>
@@ -373,9 +330,7 @@
       </div>
     </section>
 
-    <!-- =========================================================
-         EDUCATION SECTION
-    ========================================================== -->
+    <!-- EDUCATION -->
     <section class="section card reveal" id="education">
       <div class="section-head">
         <h2>Education</h2>
@@ -401,9 +356,7 @@
       </div>
     </section>
 
-    <!-- =========================================================
-         CERTIFICATIONS SECTION
-    ========================================================== -->
+    <!-- CERTIFICATIONS -->
     <section class="section card reveal" id="certifications">
       <div class="section-head">
         <h2>Certifications</h2>
@@ -419,9 +372,7 @@
       </div>
     </section>
 
-    <!-- =========================================================
-         PUBLICATIONS SECTION
-    ========================================================== -->
+    <!-- PUBLICATIONS -->
     <section class="section card reveal" id="publications">
       <div class="section-head">
         <h2>Publications</h2>
@@ -449,9 +400,7 @@
       </div>
     </section>
 
-    <!-- =========================================================
-         CONTACT SECTION
-    ========================================================== -->
+    <!-- CONTACT -->
     <section class="section card reveal" id="contact">
       <div class="section-head">
         <h2>Contact</h2>
@@ -483,22 +432,11 @@
       </div>
     </section>
 
-    <!-- =========================================================
-         FOOTER
-    ========================================================== -->
     <footer class="footer reveal">
       © <span id="year"></span> Bhuvan Sri Sai Damarla • Built with HTML/CSS
     </footer>
   </main>
 
-  <!-- =========================================================
-       JAVASCRIPT
-       - year
-       - mobile menu
-       - copy email
-       - scroll progress
-       - reveal animation
-  ========================================================== -->
   <script>
     // year
     document.getElementById("year").textContent = new Date().getFullYear();
@@ -521,7 +459,7 @@
       });
     });
 
-    // copy email (icon button)
+    // copy email (✅ works with icon button too)
     const copyBtn = document.getElementById("copyEmailBtn");
     copyBtn.addEventListener("click", async () => {
       try {
@@ -559,6 +497,3 @@
   </script>
 </body>
 </html>
-
-
-
