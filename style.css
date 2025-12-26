@@ -509,3 +509,41 @@ li{ margin:7px 0; line-height:1.6; color: var(--text); opacity:.95; }
   .reveal{ transition: none; }
   .btn, .chip, .nav-links a, .hoverlift{ transition: none; }
 }
+
+/* Icon buttons for social links */
+.social-icons{
+  gap:12px;
+}
+
+.icon-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 12px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background: rgba(255,255,255,.03);
+  color: var(--muted);
+  font-weight:900;
+  transition: transform .18s ease, background .18s ease, color .18s ease;
+  cursor:pointer;
+}
+
+.icon-btn:hover{
+  background: rgba(255,255,255,.08);
+  color: var(--text);
+  transform: translateY(-1px);
+}
+
+.icon-btn svg{
+  width:18px;
+  height:18px;
+  fill: currentColor;
+  opacity:.95;
+}
+
+@media(max-width: 520px){
+  .icon-btn span{ display:none; } /* icons only on very small screens */
+  .icon-btn{ padding:10px; }
+}
+
