@@ -510,68 +510,49 @@ li{ margin:7px 0; line-height:1.6; color: var(--text); opacity:.95; }
   .btn, .chip, .nav-links a, .hoverlift{ transition: none; }
 }
 
-/* ===== Social icons: matched with design ===== */
+/* Social icon row */
 .social-icons{
-  gap:12px;
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
   align-items:center;
+  margin-top:14px;
 }
 
-.icon-chip{
-  appearance:none;
+/* Icon-only buttons that match your design */
+.sicon{
+  width:56px;
+  height:56px;
+  border-radius:16px;
+  display:inline-grid;
+  place-items:center;
+
   border:1px solid var(--line);
   background: rgba(255,255,255,.03);
   color: var(--muted);
-  border-radius: 16px;
-  padding: 10px 12px;
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  font-weight:900;
+
   cursor:pointer;
   transition: transform .18s ease, background .18s ease, color .18s ease, box-shadow .18s ease;
+  appearance:none;
+  -webkit-appearance:none;
 }
 
-.icon-chip:hover{
+.sicon:hover{
   background: rgba(255,255,255,.08);
   color: var(--text);
   transform: translateY(-1px);
-  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  box-shadow: 0 12px 30px rgba(0,0,0,.25);
 }
 
-/* icon container */
-.icon-chip .icon{
-  width:40px;
-  height:40px;
-  border-radius: 14px;
-  display:grid;
-  place-items:center;
-  background: rgba(255,255,255,.05);
-  border:1px solid rgba(255,255,255,.12);
+/* Force SVG color (fixes black icons) */
+.sicon-svg{
+  width:24px;
+  height:24px;
+  fill: currentColor !important;
 }
 
-/* svg uses currentColor so it follows theme */
-.icon-chip svg{
-  width:20px;
-  height:20px;
-  fill: currentColor;
-  opacity:.95;
-}
-
-/* label */
-.icon-chip .label{
-  font-size:14px;
-  letter-spacing:.2px;
-}
-
-/* “Copied!” feedback stays aligned */
-.icon-chip:focus{
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(124,58,237,.22);
-}
-
-/* mobile: keep nice without breaking */
-@media (max-width: 520px){
-  .icon-chip{ padding:10px; }
-  .icon-chip .label{ display:none; } /* icons only */
-  .icon-chip .icon{ width:42px; height:42px; }
+/* Remove default button styles fully */
+button.sicon{
+  padding:0;
+  font: inherit;
 }
