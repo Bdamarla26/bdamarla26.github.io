@@ -351,71 +351,147 @@
     <!-- =================== END EXPERIENCE =================== -->
 
 
-    <!-- ======================================================
-         10) PROJECTS SECTION
-    ======================================================= -->
-    <section class="section card reveal" id="projects">
+<!-- =========================================================
+     PROJECTS 
+========================================================= -->
+<section class="section projects-wrap reveal" id="projects">
+  <div class="projects-header">
+    <h2 class="projects-title">PROJECTS</h2>
+    <div class="projects-underline" aria-hidden="true"></div>
+  </div>
 
-      <div class="section-head">
-        <h2>Projects</h2>
-        <p class="muted">Strong, simple descriptions. Add links when ready.</p>
+  <div class="projects-carousel">
+    <!-- Left Arrow -->
+    <button class="pnav pnav-left" type="button" id="projPrev" aria-label="Previous projects">
+      ‹
+    </button>
+
+    <!-- Track -->
+    <div class="projects-viewport">
+      <div class="projects-track" id="projectsTrack">
+
+        <!-- ===== Project Card 1 ===== -->
+        <article class="p-card">
+          <div class="p-img">
+            <img src="images/project1.jpg" alt="Project preview - Sentiment Analysis" />
+          </div>
+
+          <div class="p-body">
+            <h3 class="p-title">Sentiment Analysis of Tweets</h3>
+
+            <div class="p-tech">
+              <a class="p-techlink" href="#" target="_blank" rel="noreferrer">NLP</a>
+              <span class="p-sep">|</span>
+              <a class="p-techlink" href="#" target="_blank" rel="noreferrer">SVM</a>
+              <span class="p-sep">|</span>
+              <a class="p-techlink" href="#" target="_blank" rel="noreferrer">Python</a>
+            </div>
+
+            <div class="p-for">
+              <span class="p-for-label">For:</span>
+              <span class="p-for-text">Teams needing quick, accurate public-opinion insights.</span>
+            </div>
+
+            <div class="p-metrics">
+              <span class="p-chip">50+ Tweet Samples</span>
+              <span class="p-chip">10+ Experiments</span>
+              <span class="p-chip">High Accuracy</span>
+            </div>
+
+            <p class="p-desc">
+              Built an NLP pipeline to classify tweet sentiment using SVM and feature engineering.
+              Focused on clean preprocessing, model evaluation, and reliable classification.
+            </p>
+
+            <a class="p-code" href="#" target="_blank" rel="noreferrer">View Code</a>
+          </div>
+        </article>
+
+        <!-- ===== Project Card 2 ===== -->
+        <article class="p-card">
+          <div class="p-img">
+            <img src="images/project2.jpg" alt="Project preview - Home Automation" />
+          </div>
+
+          <div class="p-body">
+            <h3 class="p-title">Raspberry Pi Home Automation</h3>
+
+            <div class="p-tech">
+              <a class="p-techlink" href="#" target="_blank" rel="noreferrer">Raspberry Pi</a>
+              <span class="p-sep">|</span>
+              <a class="p-techlink" href="#" target="_blank" rel="noreferrer">Node-RED</a>
+              <span class="p-sep">|</span>
+              <a class="p-techlink" href="#" target="_blank" rel="noreferrer">Python</a>
+            </div>
+
+            <div class="p-for">
+              <span class="p-for-label">For:</span>
+              <span class="p-for-text">Users who want smart control + automation at home.</span>
+            </div>
+
+            <div class="p-metrics">
+              <span class="p-chip">IoT Automations</span>
+              <span class="p-chip">Real-time Control</span>
+              <span class="p-chip">Energy Savings</span>
+            </div>
+
+            <p class="p-desc">
+              Designed a smart home workflow using Raspberry Pi + Node-RED with dashboard-based controls.
+              Integrated automation rules for comfort and security improvements.
+            </p>
+
+            <a class="p-code" href="#" target="_blank" rel="noreferrer">View Code</a>
+          </div>
+        </article>
+
+        <!-- ===== Project Card 3 ===== -->
+        <article class="p-card">
+          <div class="p-img">
+            <img src="images/project3.jpg" alt="Project preview - Robot Car" />
+          </div>
+
+          <div class="p-body">
+            <h3 class="p-title">Android Smart Robot Control Car</h3>
+
+            <div class="p-tech">
+              <a class="p-techlink" href="#" target="_blank" rel="noreferrer">Android Studio</a>
+              <span class="p-sep">|</span>
+              <a class="p-techlink" href="#" target="_blank" rel="noreferrer">Arduino</a>
+              <span class="p-sep">|</span>
+              <a class="p-techlink" href="#" target="_blank" rel="noreferrer">IoT</a>
+            </div>
+
+            <div class="p-for">
+              <span class="p-for-label">For:</span>
+              <span class="p-for-text">Education + demos requiring wireless robot control.</span>
+            </div>
+
+            <div class="p-metrics">
+              <span class="p-chip">Bluetooth Control</span>
+              <span class="p-chip">Live Commands</span>
+              <span class="p-chip">Smooth Navigation</span>
+            </div>
+
+            <p class="p-desc">
+              Built an Android app to control a robot car via Arduino for navigation and real-time driving.
+              Implemented responsive controls and reliable command handling.
+            </p>
+
+            <a class="p-code" href="#" target="_blank" rel="noreferrer">View Code</a>
+          </div>
+        </article>
+
+        <!-- Add more cards here (same structure) -->
+
       </div>
+    </div>
 
-      <div class="grid">
-
-        <!-- Project 1 -->
-        <article class="project card hoverlift">
-          <h3>Sentiment Analysis of Tweets</h3>
-          <p class="muted">
-            Built a sentiment analysis system using NLP and SVM to classify public opinion from tweets, improving accuracy and efficiency.
-          </p>
-          <div class="tags">
-            <span class="tag">NLP</span>
-            <span class="tag">SVM</span>
-            <span class="tag">Python</span>
-          </div>
-          <div class="links">
-            <a class="link" href="#" target="_blank" rel="noreferrer">Code →</a>
-            <a class="link" href="#" target="_blank" rel="noreferrer">Report →</a>
-          </div>
-        </article>
-
-        <!-- Project 2 -->
-        <article class="project card hoverlift">
-          <h3>Raspberry Pi Home Automation</h3>
-          <p class="muted">
-            Built a smart home automation system using Raspberry Pi OS, Python, OpenHAB, and Node-RED to improve comfort, security, and energy efficiency.
-          </p>
-          <div class="tags">
-            <span class="tag">Raspberry Pi</span>
-            <span class="tag">Node-RED</span>
-            <span class="tag">Python</span>
-          </div>
-          <div class="links">
-            <a class="link" href="#" target="_blank" rel="noreferrer">Demo →</a>
-            <a class="link" href="#" target="_blank" rel="noreferrer">Code →</a>
-          </div>
-        </article>
-
-        <!-- Project 3 -->
-        <article class="project card hoverlift">
-          <h3>Android-Based Smart Robot Control Car</h3>
-          <p class="muted">
-            Developed an Android-controlled robot car using Android Studio and Arduino for education, research, and surveillance use cases.
-          </p>
-          <div class="tags">
-            <span class="tag">Android Studio</span>
-            <span class="tag">Arduino</span>
-            <span class="tag">IoT</span>
-          </div>
-          <div class="links">
-            <a class="link" href="#" target="_blank" rel="noreferrer">Video →</a>
-            <a class="link" href="#" target="_blank" rel="noreferrer">Code →</a>
-          </div>
-        </article>
-
-      </div>
-    </section>
+    <!-- Right Arrow -->
+    <button class="pnav pnav-right" type="button" id="projNext" aria-label="Next projects">
+      ›
+    </button>
+  </div>
+</section>
     <!-- =================== END PROJECTS =================== -->
 
 
